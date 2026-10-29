@@ -1,0 +1,63 @@
+# Owner: project owner. Request changes via PR (see CONTRIBUTING.md).
+
+# Environment files: never commit real configuration or secrets
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+.vite/
+
+# Rust / Tauri
+target/
+src-tauri/target/
+**/src-tauri/target/
+*.msi
+*.exe
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Logs
+logs/
+*.log
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Recordings, private screenshots, generated user data
+recordings/
+*.wav
+*.mp3
+screenshots/
+user-data/
+.atlas/
+
+# Editor / OS noise
+.vscode/*
+!.vscode/extensions.json
+.idea/
+Thumbs.db
+.DS_Store
